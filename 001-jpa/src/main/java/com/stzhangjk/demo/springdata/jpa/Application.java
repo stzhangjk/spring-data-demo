@@ -1,4 +1,4 @@
-package com.stzhangjk.demo.spring.data.redis;
+package com.stzhangjk.demo.springdata.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
