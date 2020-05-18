@@ -3,6 +3,7 @@ package com.stzhangjk.demo.springdata.jpa.entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "vip")
+@EntityListeners(AuditingEntityListener.class)
 public class Vip extends BaseEntity<Vip> {
 
     /** 店铺 */

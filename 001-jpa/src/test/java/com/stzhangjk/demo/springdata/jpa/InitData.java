@@ -40,6 +40,8 @@ public class InitData {
     public void addInitData() {
 
         Shop shop = new Shop()
+                .setOpenTime(new Date())
+                .setTitle("测试店铺title")
                 .setName("测试店铺");
         shop = shopRepo.save(shop);
         log.info(shop.toString());
